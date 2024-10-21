@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block tittle %}Alexandria{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Início</a></li>
+            <li><a href="{% url 'meus_materiais' %}">Meus Materiais</a></li>
+            <li><a href="{% url 'area_do_usuario'  %}">Área do Usuário</a></li>
+            <li><a href="{% url 'configuracoes' %}">Configurações</a></li>
+            <li><a href="{% url 'sobre_nos' %}">Sobre Nós</a></li><br>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Alexandria: A Biblioteca Virtual</p>
+    </footer>
+    <script src="layout/scripts/jquery.min.js"></script>
+    <script src="layout/scripts/jquery.backtotop.js"></script>
+    <script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

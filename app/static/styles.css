@@ -1,3 +1,7 @@
-#body, p{
+#nav, ul, li, a{
+    font-size: 18px; 
+    display: flex;
+    padding-left: 40px;
+    padding-top: 10px;
     font-family: 'girassol';
 }
