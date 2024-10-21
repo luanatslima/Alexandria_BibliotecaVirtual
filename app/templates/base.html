@@ -1,12 +1,13 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block tittle %}Alexandria{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
+
 <body>
     <nav>
         <ul>
@@ -14,9 +15,19 @@
             <li><a href="{% url 'meus_materiais' %}">Meus Materiais</a></li>
             <li><a href="{% url 'area_do_usuario'  %}">Área do Usuário</a></li>
             <li><a href="{% url 'configuracoes' %}">Configurações</a></li>
-            <li><a href="{% url 'sobre_nos' %}">Sobre Nós</a></li><br>
+            <li><a href="{% url 'sobre_nos' %}">Sobre Nós</a></li>
         </ul>
+        <hr>
     </nav>
+    <style>
+        body {
+            background-image: url("{% static 'foto_fundo.jpg' %}");
+            background-size: cover; 
+            background-position: center;
+            height: 70vh; 
+            margin: 0;
+        }
+    </style>
     <main>
         {% block content %}
         {% endblock %}
