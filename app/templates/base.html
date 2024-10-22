@@ -19,6 +19,7 @@
         </ul>
         <hr>
     </nav>
+   
     <style>
         body {
             background-image: url("{% static 'foto_fundo.jpg' %}");
@@ -28,15 +29,17 @@
             margin: 0;
         }
     </style>
-    <main>
+
+    <div>
         {% block content %}
         {% endblock %}
-    </main>
-    <footer>
-        <p>&copy; 2024 Alexandria: A Biblioteca Virtual</p>
-    </footer>
-    <script src="layout/scripts/jquery.min.js"></script>
-    <script src="layout/scripts/jquery.backtotop.js"></script>
-    <script src="layout/scripts/jquery.mobilemenu.js"></script>
+    </div>
 </body>
+
+<footer>
+    <p>&copy; 2024 Alexandria: A Biblioteca Virtual</p>
+</footer>
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
 </html>

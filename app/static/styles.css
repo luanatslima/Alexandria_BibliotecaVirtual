@@ -9,8 +9,12 @@
     color: white;
 } 
 
-footer{
+#footer{
     font-size: 25px; 
     color: white;
     padding-left: 20px;
+}
+  
+#div, img{
+    max-width: 200px
 }

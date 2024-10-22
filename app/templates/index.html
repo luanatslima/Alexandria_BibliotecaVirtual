@@ -4,9 +4,20 @@
 
 {% block content %}
 
-<section id="">
-    <h2>{{ titulo.pagina }}</h2>
-    <p>{{ conteudo.pagina }}</p>
-</section>
+<div class="container">
+    {% for pagina in paginas %}
+    <section class="paginas">
+        <h2 class="pagina-titulo">{{ pagina.titulo }}</h2>
+        <p class="pagina-conteudo">{{ pagina.conteudo }}</p>
+        <img src="{{ pagina.foto.url }}">
+    </section>
+    {% endfor %}  
+</div>
+
+<div id="divBusca">
+    <img src="{% static '' %}" alt="Buscar..."/>
+    <input type="text" id="txtBusca" placeholder="Buscar..."/>
+    <button id="btnBusca">Buscar</button>
+</div> 
 
 {% endblock %}
