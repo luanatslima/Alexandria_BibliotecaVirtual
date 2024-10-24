@@ -14,10 +14,13 @@
     {% endfor %}  
 </div>
 
-<div id="divBusca">
-    <img src="{% static '' %}" alt="Buscar..."/>
-    <input type="text" id="txtBusca" placeholder="Buscar..."/>
-    <button id="btnBusca">Buscar</button>
-</div> 
+<section class="navbar bg-body-tertiary">
+  <h1>ALEXANDRIA</h1>
+  <div id="divBusca">
+    <img src="{% static 'lupa.png' %}" id="btnBusca" alt="Buscar"/>
+    <input type="text" id="txtBusca" placeholder="Campo de Busca"/>
+  </div>
+</section>
+
 
 {% endblock %}

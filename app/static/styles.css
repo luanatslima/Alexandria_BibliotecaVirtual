@@ -1,20 +1,57 @@
-#nav, ul, li, a{
-    font-size: 25px; 
+nav, ul, li, a{
+    font-size: 28px; 
+    font-family: Georgia;
+    text-shadow: 5px;
     display: flex;
-    padding-left: 27px;
+    padding-left: 50px;
     padding-right: 1.5em;
-    padding-top: 5px;
-    font-family: 'girassol';
+    padding-top: 8px;
     text-decoration: none;
     color: white;
 } 
 
-#footer{
+footer{
     font-size: 25px; 
     color: white;
     padding-left: 20px;
+    margin-top: 300px;
 }
-  
-#div, img{
-    max-width: 200px
+
+img{
+    height: 30px;
+    color: #c5b6b6;
+}
+
+section{
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    margin-left: 710px;
+}
+
+#divBusca{
+    background-color:#ffffff;
+    border:solid 0px;
+    border-radius:10px;
+    width:400px;
+    height: 50px;
+}
+
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:40px;
+    border: 3px;
+    height:32px;
+    width: 0px;
+}
+
+section h1 {
+    text-shadow: 10px;
+    font-size: 4em;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #ffffff;
 }
