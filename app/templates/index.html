@@ -4,7 +4,9 @@
 
 {% block content %}
 
-<div class="container">
+<body>
+
+  <div class="container">
     {% for pagina in paginas %}
     <section class="paginas">
         <h2 class="pagina-titulo">{{ pagina.titulo }}</h2>
@@ -12,15 +14,16 @@
         <img src="{{ pagina.foto.url }}">
     </section>
     {% endfor %}  
-</div>
-
-<section class="navbar bg-body-tertiary">
-  <h1>ALEXANDRIA</h1>
-  <div id="divBusca">
-    <img src="{% static 'lupa.png' %}" id="btnBusca" alt="Buscar"/>
-    <input type="text" id="txtBusca" placeholder="Campo de Busca"/>
   </div>
-</section>
 
+  <section class="navbar bg-body-tertiary">
+    <h1>ALEXANDRIA</h1>
+    <div id="divBusca">
+      <img src="{% static 'img/lupa.png' %}" id="btnBusca" alt="Buscar"/>
+      <input type="text" id="txtBusca" placeholder="Campo de Busca"/>
+    </div>
+  </section>
+
+</body>
 
 {% endblock %}

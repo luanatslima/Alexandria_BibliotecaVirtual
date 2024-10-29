@@ -55,3 +55,6 @@ section h1 {
     margin-bottom: 10px;
     color: #ffffff;
 }
+body{
+    position: static;
+}
