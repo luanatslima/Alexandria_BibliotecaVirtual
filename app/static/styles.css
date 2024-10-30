@@ -17,24 +17,36 @@ footer{
     margin-top: 300px;
 }
 
-img{
-    height: 30px;
-    color: #c5b6b6;
+/* IMAGEM LUPA */
+section div img{
+    padding-top: 6px;
+    height: 40px;
+}
+
+article{
+    margin-left: 710px;
+    padding-top: 70px;
+    width: 28%;
+    margin: auto;
+    display: flex;
+  
 }
 
 section{
     justify-content: center;
     align-items: center;
-    margin-top: 300px;
     margin-left: 710px;
+    padding-bottom: 1px;
 }
 
+/* ESPAÇO DE PESQUISA */
 #divBusca{
     background-color:#ffffff;
     border:solid 0px;
     border-radius:10px;
-    width:400px;
+    width:433px;
     height: 50px;
+    margin-top: 00px;
 }
 
 #txtBusca{
@@ -48,13 +60,6 @@ section{
     width: 0px;
 }
 
-section h1 {
-    text-shadow: 10px;
-    font-size: 4em;
-    margin: 0;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
 body{
     position: static;
 }

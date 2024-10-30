@@ -5,25 +5,15 @@
 {% block content %}
 
 <body>
-
-  <div class="container">
-    {% for pagina in paginas %}
-    <section class="paginas">
-        <h2 class="pagina-titulo">{{ pagina.titulo }}</h2>
-        <p class="pagina-conteudo">{{ pagina.conteudo }}</p>
-        <img src="{{ pagina.foto.url }}">
-    </section>
-    {% endfor %}  
-  </div>
-
-  <section class="navbar bg-body-tertiary">
-    <h1>ALEXANDRIA</h1>
+  <article>
+    <img id="class" src="{% static 'img/logo.png' %}">
+  </article>
+  <section>
     <div id="divBusca">
-      <img src="{% static 'img/lupa.png' %}" id="btnBusca" alt="Buscar"/>
+      <img class="lupa" src="{% static 'img/lupa.png' %}" id="btnBusca" alt="Buscar"/>
       <input type="text" id="txtBusca" placeholder="Campo de Busca"/>
     </div>
   </section>
-
 </body>
 
 {% endblock %}
