@@ -23,13 +23,11 @@ section div img{
     height: 40px;
 }
 
-article{
-    margin-left: 710px;
-    padding-top: 70px;
+article img{
     width: 28%;
     margin: auto;
     display: flex;
-  
+    
 }
 
 section{
