@@ -1,1 +1,1 @@
-# Deveriamos ter feito uma calculadora.
+# Deveríamos ter feito uma calculadora.
