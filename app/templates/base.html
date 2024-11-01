@@ -29,20 +29,17 @@
         </ul>
 
     </nav>
-   
-    <style>
-        body {
-            background-image: url("{% static 'img/foto_fundo.jpg' %}");
-            background-size: cover; 
-            background-position: center;
-            height: 70vh; 
-            margin: 0;
-        }
-    </style>
 
     {% block content %}
     {% endblock %}
 </body>
+
+
+<style>
+    body {
+        background-image: url("{% static 'img/foto_fundo.jpg' %}");
+    }
+</style>
 
 <footer>
     <p>&copy; 2024 Alexandria: A Biblioteca Virtual</p>

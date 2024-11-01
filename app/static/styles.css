@@ -27,7 +27,6 @@ article img{
     width: 28%;
     margin: auto;
     display: flex;
-    
 }
 
 section{
@@ -60,4 +59,8 @@ section{
 
 body{
     position: static;
+    background-size: cover; 
+    background-position: center;
+    height: 70vh; 
+    margin: 0;
 }
