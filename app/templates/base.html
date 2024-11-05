@@ -10,40 +10,28 @@
 
 <body>
     <nav>
-        <ul>
-            <li>
-                <a href="{% url 'index' %}">Início</a>
-            </li>
-            <li>
-                <a href="{% url 'meus_materiais' %}">Meus Materiais</a>
-            </li>
-            <li>
-                <a href="{% url 'area_do_usuario' %}">Área do Usuário</a>
-            </li>
-            <li>
-                <a  href="{% url 'configuracoes' %}">Configurações</a>
-            </li>
-            <li>
-                <a href="{% url 'sobre_nos' %}">Sobre Nós</a>
-            </li>
-        </ul>
-
+        <a href="{% url 'index' %}">Início</a> 
+        <a href="{% url 'meus_materiais' %}">Meus Materiais</a>
+        <a href="{% url 'area_do_usuario' %}">Área do Usuário</a> 
+        <a  href="{% url 'configuracoes' %}">Configurações</a> 
+        <a href="{% url 'sobre_nos' %}">Sobre Nós</a>
     </nav>
-
+    <header>
     {% block content %}
     {% endblock %}
+    </header>
+
+    <style>
+        body {
+            background-image: url("{% static 'img/foto_fundo.jpg' %}");
+        }
+    </style>
+    
+    <footer>
+        <p>&copy; 2024 Alexandria: A Biblioteca Virtual</p>
+    </footer>
 </body>
 
-
-<style>
-    body {
-        background-image: url("{% static 'img/foto_fundo.jpg' %}");
-    }
-</style>
-
-<footer>
-    <p>&copy; 2024 Alexandria: A Biblioteca Virtual</p>
-</footer>
 <script src="layout/scripts/jquery.min.js"></script>
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>

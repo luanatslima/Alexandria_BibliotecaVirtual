@@ -1,4 +1,4 @@
-nav, ul, li, a{
+body nav a{
     font-size: 28px; 
     font-family: Georgia;
     text-shadow: 5px;
@@ -10,7 +10,7 @@ nav, ul, li, a{
     color: white;
 } 
 
-footer{
+body footer{
     font-size: 25px; 
     color: white;
     padding-left: 20px;
